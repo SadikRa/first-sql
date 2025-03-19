@@ -1,0 +1,12 @@
+-- Active: 1742403835853@@127.0.0.1@5432@ph@public
+
+SELECT * FROM person2;
+
+ALTER TABLE person2
+ADD COLUMN email VARCHAR(25) DEFAULT 'default@gmail.com' NOT NULL;
+
+INSERT INTO person2 VALUES(5, 'test', 24, 'sadik@gmail.com')
+
+
+ALTER TABLE person2
+ DROP COLUMN email
