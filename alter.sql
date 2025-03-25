@@ -122,3 +122,14 @@ SELECT * FROM books
 
 SELECT * FROM books 
     WHERE title ILIKE '%E'
+
+SELECT * FROM books 
+    WHERE price IN (20, 30, 35) 
+
+
+   SELECT * FROM books LIMIT 2 OFFSET 2 * 0;
+   SELECT * FROM books LIMIT 2 OFFSET 2 * 1;
+   SELECT * FROM books LIMIT 2 OFFSET 2 * 2;
+
+
+
