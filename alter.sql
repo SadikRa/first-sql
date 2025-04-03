@@ -133,3 +133,12 @@ SELECT * FROM books
 
 
 
+DELETE FROM books 
+    WHERE title = 'Clean Code'
+
+
+SELECT * FROM books
+
+update books 
+    SET price = 39.0
+    WHERE id = 1
