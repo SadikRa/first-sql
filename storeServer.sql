@@ -33,3 +33,4 @@ CREATE Table product (
     updatedAt TIMESTAMP DEFAULT NOW()
 )
 
+SELECT * FROM product
