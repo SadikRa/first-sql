@@ -25,7 +25,8 @@ VALUES (
 SELECT * FROM users;
 
 CREATE Table product (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid () name VARCHAR(400) NOT NULL,
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid,
+    () name VARCHAR(400) NOT NULL,
     quality VARCHAR(500) NOT NULL,
     quantity INT NOT NULL DEFAULT (0),
     isDeleted BOOLEAN DEFAULT FALSE,
@@ -34,3 +35,12 @@ CREATE Table product (
 )
 
 SELECT * FROM product
+
+CREATE Table surah (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid,
+    name VARCHAR(200) NOT NULL,
+    length FLOAT NOT NULL,
+    createAt TIMESTAMP DEFAULT NOW()
+);
+
+SELECT * FROM surah
